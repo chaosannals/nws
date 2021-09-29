@@ -1,3 +1,5 @@
 /.*/
+/nginx*/
 *.exe
 *.log
+*.zip
