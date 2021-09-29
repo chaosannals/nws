@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/chaosannals/nws/nginx"
 	"github.com/kardianos/service"
 )
 
@@ -14,7 +13,7 @@ func main() {
 		DisplayName: "Nginx Windows Service",
 		Description: "Nginx Windows Service.",
 	}
-	ns := nginx.NewNginxService()
+	ns := NewNginxService()
 	s, err := service.New(ns, svcConfig)
 	if err != nil {
 		fmt.Printf("%v\n", err)
